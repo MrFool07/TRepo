@@ -1,0 +1,37 @@
+#MAX. Element
+def max():
+    l=[2,3,10,5,6]
+    m=l[0]
+    for i in l:
+        if(i>m):
+            m=i
+    print("\nThe max. element is: ",m)        
+max()    
+***********************************************************************
+n=int(input("\nEnter the number of rows to be printed: "))
+for i in range(1,n+1):
+    for j in range(i,i*2):
+        print("* \n")
+********************************************************************************
+def dic():
+    d={1:"Kaushik",2:"Karthik"}
+    n=int(input("\nEnter the number of dictionary elements to be present: "))
+    for i in range(3,n+1):
+        d[i]=input("\nEnter the value for the particular key "+str(i)+": ")
+    print(d)
+dic()    
+*******************************************************************************
+def Stack():
+    s=[1,2,3]
+    n=int(input("\nEnter the number of elements in the stack: "))
+    def push():
+        top=len(s)
+        if(top==len):
+            print("\nFull Stack!!!. Can't enter more!!!")
+        else:
+            dataIn=int(input("\nEnter the data to be entered: "))
+            s[top]=dataIn
+            print(s)
+    push()
+Stack()    
+**********************************************************************
